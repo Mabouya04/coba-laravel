@@ -14,10 +14,10 @@ class weaponController extends Controller
         ]);
     }
 
-    public function show($slug){
+    public function show(Weapon $weapon){
         return view('weapon',[
             "title" => "Weapon",
-            "weapon" => Weapon::find($slug)
+            "weapon" => $weapon
             ]);
     }
 }

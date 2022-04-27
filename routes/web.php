@@ -33,4 +33,4 @@ Route::get('/about', function () {
 
 //halaman single
 
-Route:: get('weapons/{slug}', [weaponController::class, 'show']);
+Route:: get('weapons/{weapon:slug}', [weaponController::class, 'show']);
